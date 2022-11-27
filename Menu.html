@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Menu</title>
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: #bca786;
+                width: 1920px;
+                height: 640px;
+            }
+            .center  {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            ul {
+                height: 100px;
+                background-color: rgb(23, 22, 22);
+                margin-left: -10px;
+                margin-right: 10px;
+                margin-top: -10px;
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                display: flex;
+                justify-content: right;
+                margin-bottom: -25px;
+                font-size: 30px;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+            }
+
+            ul li {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            ul li a {
+                margin-top: 35px;
+                display: inline-block;
+                color: rgb(255, 255, 255);
+                padding:20px 20px;
+                text-decoration: none;
+            }
+
+            ul li a:hover{
+                background: linear-gradient(rgba(188, 167, 134, 0.9), rgba(211, 201, 184, 0.9));
+                border-radius: 30px;
+            }
+
+            header{
+                margin-left: 30px;
+                margin-top: 15px;
+                font-size: 45px;
+                color: aliceblue;
+                font-family: 'Playfair Display', serif;
+                text-align: left;
+                width: 100%;
+                opacity: 1;
+                position: absolute;
+            }
+
+            #main{
+                height: 600px;
+                background-color: rgb(131, 114, 84);
+                margin-left: -10px;
+                margin-top: -50px;
+                margin-right: 10px;
+            }
+    
+            section{
+                height: 600px;
+                width: 25%;
+                float: left;
+                background-color: rgb(75, 66, 50);
+                border-right: 6px dotted rgb(255, 255, 255);
+            }
+            section p{
+                margin-left: 20px;
+                font-size: 30px;
+                font-family: 'Dosis', sans-serif;
+                text-indent: 30px;
+            }
+            #secondy p{
+                margin-left: 20px;
+                font-size: 30px;
+                font-family: 'Dosis', sans-serif;
+                text-indent: 30px;
+            }
+            #third p{
+                margin-left: 20px;
+                font-size: 30px;
+                font-family: 'Dosis', sans-serif;
+                text-indent: 30px;
+                margin-right: 10px;
+            }
+            aside p{
+                margin-left: 20px;
+                font-size: 30px;
+                font-family: 'Dosis', sans-serif;
+                text-indent: 30px;
+            }
+            #secondy{
+                height: 600px;
+                width: 25%;
+                float: left;
+                background-color: rgb(130, 114, 87);
+                border-right: 7px dotted rgb(255, 255, 255);
+            }
+            #third {
+                width: 25%;
+                height: 600px;
+                float: left;
+                background-color: rgb(94, 76, 44);
+                border-right: 6px dotted rgb(255, 255, 255);
+            }
+            aside{
+                width: 24%;
+                height: 600px;
+                float: left;
+                background-color: rgb(170, 158, 139);
+            }
+            #men{
+                background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(leftright.jpg);
+                background-repeat: no-repeat;
+                background-position: 20% 50%;
+                background-size:cover;
+                height: 200px;
+                margin-top: -312px;
+                margin-right: 10px;
+                margin-left: -10px;
+            }
+
+            #maine{
+                height: 600px;
+                background-color: rgb(131, 114, 84);
+                margin-left: -10px;
+                margin-top: -50px;
+                margin-right: 10px;
+            }
+
+            #lefty{
+                height: 600px;
+                width: 25%;
+                float: left;
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(macaroon.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #leftyy{
+                height: 600px;
+                width: 25%;
+                float: left;
+                background-color: rgb(183, 164, 146);
+            }
+            #thirdy {
+                width: 25%;
+                height: 600px;
+                float: left;
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(eclair.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #fourthy{
+                width: 25%;
+                height: 600px;
+                float: left;
+                background-color: rgb(225, 218, 206); 
+            }
+            #lefty p{
+                text-align: center;
+                font-size: 100px;
+                font-family: 'Sacramento', cursive;
+                color: white;
+                background-color: rgba(44, 42, 42, 0.5);
+                position: relative;
+                top: 100px;
+            }
+            #leftyy p{
+                margin-left: 20px;
+                font-size: 30px;
+                font-family: 'Dosis', sans-serif;
+                text-indent: 30px;
+            }
+            #thirdy p{
+                text-align: center;
+                font-size: 100px;
+                font-family: 'Sacramento', cursive;
+                color: white;
+                background-color: rgba(44, 42, 42, 0.5);
+                position: relative;
+                top: 100px;
+            }
+            #fourthy p{
+                margin-left: 20px;
+                font-size: 30px;
+                font-family: 'Dosis', sans-serif;
+                text-indent: 30px;
+            }
+
+            footer{
+                width: 1880px;
+                background-color: rgb(42, 37, 37);
+                margin-bottom: -10px;
+                margin-left: -10px;
+                padding: 20px;
+                color: white;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <header>COFFEENERGY</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About the Restaurant</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+            </ul><br>
+        </nav>
+        <img src="menulogo.png" alt="menulogo" style="margin-left: 580px; position: relative; top: -37px;">
+        <div id="men">
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 80px; text-align: center; color: white; position: relative; top: 50px;">MENU</p>
+        </div>
+        <h3 style="text-align: center; font-family: 'Amatic SC', cursive; font-size: 50px; background-color: white; margin-left: -10px; margin-top: -20px; margin-right: 10px;">FEATURED BEVERAGES</h3>
+        <div id="main">
+            <section>
+                <h3 style="text-align: center; font-size: 30px;">ESPRESSO CON PANNA</h3>
+                <img src="panna.jpg" alt="espresso con panna" height="200" class="center" style="border-radius: 100px;"><br>
+                <img src="four.png" alt="5-star" class="center" height="50">
+                <p>A shot of espresso topped with whipped cream served in an espresso cup.</p>
+            </section>
+            <div id="secondy">
+                <h1 style="text-align: center;">CAPPUCCINO</h1>
+                <img src="cap.jpg" alt="espresso con panna" height="200" class="center" style="border-radius: 100px;"><br>
+                <img src="four.png" alt="5-star" class="center" height="50">
+                <p>A coffee drink consisting of espresso and a milk foam mixture (drink size about 160–240 ml). Served in a cappuccino cup.</p>
+            </div>
+            <div id="third">
+                <h1 style="text-align: center;">CAFFE MOCHA</h1>
+                <img src="mocha.jpg" alt="espresso con panna" height="200" class="center" style="border-radius: 100px;"><br>
+                <img src="stars.png" alt="5-star" class="center" height="50">
+                <p>A caffe latte with chocolate and whipped cream, made by pouring about 2 cl of chocolate sauce into the glass, followed by an espresso shot and steamed milk. </p>
+            </div>
+            <aside>
+                <h3 style="text-align: center; font-size: 30px;">AFFOGATO</h3>
+                <img src="affogato.jpg" alt="espresso con panna" height="200" class="center" style="border-radius: 100px;"><br>
+                <img src="stars.png" alt="5-star" class="center" height="50">
+                <p>Espresso poured on a vanilla ice cream served in a cappuccino cup.</p>
+            </aside>
+        </div>
+        <h3 style="text-align: center; font-family: 'Amatic SC', cursive; font-size: 50px; background-color: white; margin-left: -10px; margin-top: -20px; margin-right: 10px; border-top: solid 5px black;">BEST SPECIALS</h3>
+        <div id="maine">
+            <div id="lefty">
+                <p>Macarons<p>
+            </div>
+            <div id="leftyy">
+                <h1 style="text-align: left; background-color: white; width: 50%; border-left: solid 15px white; height: 50px; font-size: 40px; font-family: 'Sacramento', cursive;">Macarons</h1>
+                <img src="stars.png" alt="5-star" height="50" style="margin-left: 60%; position: relative; top: -70px;">
+                <p style="font-size: 25px; margin-top:-70px;">a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond meal, and food coloring</p>
+                <h2 style="text-align: left; background-color: white; width: 40%; border-left: solid 15px white; height: 35px; font-size: 30px; font-family: 'Sacramento', cursive;">Small Box</h2>
+                <p style="font-size: 25px; margin-top:-20px;">250 PHP, contains 6 pieces</p>
+                <h2 style="text-align: left; background-color: white; width: 40%; border-left: solid 15px white; height: 35px; font-size: 30px; font-family: 'Sacramento', cursive;">Medium Box</h2>
+                <p style="font-size: 25px; margin-top:-20px;">330 PHP, contains 8 pieces</p>
+                <h2 style="text-align: left; background-color: white; width: 40%; border-left: solid 15px white; height: 35px; font-size: 30px; font-family: 'Sacramento', cursive;">Large Box</h2>
+                <p style="font-size: 25px; margin-top:-20px;">490 PHP, contains 12 pieces</p>
+                <h2 style="text-align: left; background-color: white; width: 40%; border-left: solid 15px white; height: 35px; font-size: 30px; font-family: 'Sacramento', cursive;">Party Box</h2>
+                <p style="font-size: 25px; margin-top:-20px;">650 PHP, contains 16 pieces</p>
+            </div>
+            <div id="thirdy">
+                <p style="text-align: center;">Eclairs</p>
+            </div>
+            <div id="fourthy">
+                <h1 style="text-align: left; background-color: rgb(69, 61, 61); width: 50%; border-left: solid 15px rgb(69, 61, 61); height: 50px; font-size: 40px; font-family: 'Sacramento', cursive; color: white;">Eclairs</h1>
+                <img src="stars.png" alt="5-star" height="50" style="margin-left: 60%; position: relative; top: -70px;">
+                <p style="font-size: 25px; margin-top:-70px; margin-right: 10px;">a pastry made with choux dough filled with a cream and topped with a flavored icing</p>
+                <h2 style="text-align: left; background-color: rgb(69, 61, 61); width: 40%; border-left: solid 15px rgb(69, 61, 61); height: 35px; font-size: 30px; font-family: 'Sacramento', cursive; color: white;">Chocolate</h2>
+                <p style="font-size: 25px; margin-top:-20px;">450 PHP, contains 3 pieces</p>
+                <h2 style="text-align: left; background-color: rgb(69, 61, 61); width: 40%; border-left: solid 15px rgb(69, 61, 61); height: 35px; font-size: 30px; font-family: 'Sacramento', cursive; color: white;">Strawberry</h2>
+                <p style="font-size: 25px; margin-top:-20px;">450 PHP, contains 3 pieces</p>
+                <h2 style="text-align: left; background-color: rgb(69, 61, 61); width: 40%; border-left: solid 15px rgb(69, 61, 61); height: 35px; font-size: 30px; font-family: 'Sacramento', cursive; color: white;">Caramel</h2>
+                <p style="font-size: 25px; margin-top:-20px;">500 PHP, contains 3 pieces</p>
+                <h2 style="text-align: left; background-color: rgb(69, 61, 61); width: 40%; border-left: solid 15px rgb(69, 61, 61); height: 35px; font-size: 30px; font-family: 'Sacramento', cursive; color: white;">Red Velvet</h2>
+                <p style="font-size: 25px; margin-top:-20px;">750 PHP, contains 4 pieces</p>
+            </div>
+        </div>
+        <footer>
+            COPYRIGHT. ALL RIGHTS RESERVED.
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CAFE Homepage</title>
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: #bca786;
+                width: 1920px;
+                height: 640px;
+            }
+
+            .center  {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            ul {
+                height: 100px;
+                background-color: rgb(23, 22, 22);
+                margin-left: -10px;
+                margin-right: 10px;
+                margin-top: -10px;
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                display: flex;
+                justify-content: right;
+                margin-bottom: -25px;
+                font-size: 30px;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+            }
+
+            ul li {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            ul li a {
+                margin-top: 35px;
+                display: inline-block;
+                color: rgb(255, 255, 255);
+                padding:20px 20px;
+                text-decoration: none;
+            }
+
+            ul li a:hover{
+                background: linear-gradient(rgba(188, 167, 134, 0.9), rgba(211, 201, 184, 0.9));
+                border-radius: 30px;
+            }
+
+            header {
+                margin-left: -10px;
+                margin-right: 10px;
+                background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(image.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 50vh;
+                display: flex;
+                align-items: center;
+                font-size: 60px;
+            }
+            
+            h1{
+                margin-left: 30px;
+                color: aliceblue;
+                font-family: 'Playfair Display', serif;
+                text-align: left;
+                width: 100%;
+                opacity: 1;
+                position: absolute;
+            }
+
+            #lefthead{
+                margin-left: 30px;
+                margin-top: 15px;
+                font-size: 45px;
+                color: aliceblue;
+                font-family: 'Playfair Display', serif;
+                text-align: left;
+                width: 100%;
+                opacity: 1;
+                position: absolute;
+            }
+
+            h1:hover::after{
+                font-size: 50px;
+                font-family: 'Roboto Condensed', sans-serif;
+                color: rgb(192, 192, 192);
+                content: " : A sip of coffee to avoid being drowsy.";
+            }
+
+            h2{
+                margin-left: 415px;
+                float:left;
+                margin-bottom: -80px;
+                font-size: 35px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color:#806a44;
+            }
+
+            section {
+                height: 260px;
+                margin-top: 10px;
+            }
+
+            #left {
+                width: 15%;
+                height: 260px;
+                float: left;
+            }
+            
+            #right {
+                width: 55%;
+                height: 260px;
+                float: left;
+            }
+            
+            aside{
+                width:28%;
+                height: 260px;
+                float:left;
+                margin-left: 10px;
+            }
+
+            #right p{
+                background-color: #9d8866;
+                padding: 15px;
+                border-radius: 10px;
+                font-size: 23px;
+                text-indent: 30px;
+                word-spacing: 4px;
+                font-family: 'Kalam', cursive;
+            }
+
+            .blockquote{
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 25px;
+                background: #56472e;
+                border: 1px solid #372d1b;
+                color: white;
+                box-sizing: border-box;
+            }
+
+            .blockquote--bordered{
+                border-left-width: 15px;
+            }
+
+            .blockquote--quoted::before{
+                content: "\201c";
+                font-size: 100px;
+                color: #372d1b;
+                display: block;
+                margin-bottom: -40px;
+                margin-top: -20px;
+            }
+            
+            .blockquote__text{
+                font-family: 'Kalam', cursive;
+                font-style: italic;
+                font-size: 25px;
+                line-height: 1.5;
+                margin: 0;
+            }
+
+            hr{
+                margin-top: -10px;
+                margin-bottom: 20px;
+            }
+
+            #main {
+                height: 630px;
+                width: 1920px;
+            }
+
+            #intro {
+                width: 33%;
+                float: left;
+                background-color: white;
+                margin-top: -10px;
+                margin-left: -10px;
+                height: 625px;
+                overflow: hidden;
+            }
+            
+            #feature {
+                width: 23%;
+                float: left;
+                margin-top: -10px;
+                background: url(menu.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 630px;
+                align-items: center;
+                margin-right: -20px;
+            }
+            
+            #righty{
+                width: 12.5%;
+                background-color: #372d1b;
+                height: 625px;
+                margin-top: -10px;
+                margin-left: -10px;
+                margin-right: -32px;
+                background: linear-gradient(rgb(95, 81, 81), rgba(0,0,0,0.6)), url(feature.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
+                align-items: center;
+            }
+            
+            #promo{
+                width:33%;
+                float:left;
+                margin-left: 0px;
+                background-color: #372d1b;
+                height: 625px;
+                margin-top: -10px;
+            }
+
+            #brand{
+                width: 70%;
+                float:left;
+            }
+
+            #first{
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: -45px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 25px;
+                word-spacing: 5px;
+                text-indent: 35px;
+            }
+
+            #righty p{
+                color: whitesmoke;
+                text-align: center;
+                font-size: 70px;
+                margin-bottom: -85px;
+            }
+
+            #promo p{
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+            }
+
+            .box {
+                background-color: rgba(255, 255, 255, 0.448);
+                border-radius: 5px;
+                font-family: sans-serif;
+                text-align: center;
+                line-height: 1;
+                -webkit-backdrop-filter: blur(3px);
+                backdrop-filter: blur(3px);
+                max-width: 50%;
+                max-height: 50%;
+                padding: 20px 40px;
+            }
+
+            #quote{
+                height: 200px; 
+                width: 1920px;
+                margin-top: -180px;
+                margin-bottom: 0px;
+                margin-left: -10px;
+                margin-right: -10px;
+                background: url(paper.png);
+                background-size: cover;
+                font-family: 'Pangolin', cursive;
+                text-align: center;
+            }
+
+            footer{
+                width: 1880px;
+                background-color: black;
+                margin-bottom: -10px;
+                margin-left: -10px;
+                padding: 20px;
+                color: white;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+            }
+
+            #maintest{
+                margin-top: 0px;
+                width: 100%;
+                height: 600px;
+                width: 1920px;
+            }
+
+            #testimony{
+                width: 50%;
+                height: 200px;
+                float: left;
+                background-color: rgb(153, 130, 100);
+                margin-left: -10px;
+                margin-top: -20px;
+            }
+
+            #oper{
+                background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(shop.jpg);
+                margin-top: -20px;
+                width: 50%;
+                float: left;
+                height: 500px;
+                display: block;
+                font-size: 20px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            } 
+
+            .container{
+                width: 600px;
+                height: 400px;
+                border-radius: 30px;
+                background-color: rgba(255, 255, 255, 0.6);
+                border: 3px dotted black;
+                margin-left: 18%;
+                margin-top: 5%; 
+            }
+            
+            #leftcontain{
+                width: 250px;
+                float: left;
+            }
+            #rightcontain{
+                width: 250px;
+                float: right;
+            }
+
+            #audio{
+                width: 40%;
+                float: left;
+            }
+
+            #audio p{
+                font-family: 'Oswald', sans-serif;
+                font-size: 50px;
+            }
+            #lefttest{
+                width: 50%;
+                height: 205px;
+                float: left;
+                background-color: #372d1b;
+            }
+            #righttest{
+                width: 50%;
+                height: 205px;
+                float: left;
+                background-color: #a28a5d;
+            }
+
+            #maintest #testimony blockquote{
+                background-color: #cfbfa5;
+                border-color: rgb(93, 67, 29);
+                margin: 0;
+                color: #372d1b;
+                border-right: 1px solid #bba27a;
+            }
+
+            #maintest #testimony .blockquote__text{
+                font-family: 'DM Mono', monospace;
+                font-size: 17px;
+            }
+
+            .blockquote__text--credits{
+                font-weight: bold;
+                text-align: right;
+                font-style: normal;
+            }
+            video{
+                margin-left: 75px;
+                margin-top: 12.5px;
+            }
+        </style>
+        
+    </head>
+    <body>
+
+        <h3 id="lefthead">COFFEENERGY</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About the Restaurant</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+            </ul><br>
+        </nav>
+        
+        <header>
+            <h1 style="font-size: 75px;">A Taste of Premium Coffee</h1>
+            <h2 style="margin-left: 475px; margin-top: 30px;">Serving the best since 1986</h2>
+        </header>
+
+        <div id="main">
+            <article id="intro">
+                <img src="logo.png" alt="logo" height="150" class="center" style="margin-top: 20px; margin-bottom: -50px;">
+                <h3 style="text-align: center; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">COFFEENERGY</h3>
+                <p id="first">We humbly welcome you to our humble abode. COFFEENERGY aims to bring service to the people as a place to relax, relieve anxiety, and fulfill our responsibility as a genuine business for the people. That is all, and we wish you with all the best in your future endeavours with respect to our coffee house. </p>
+                <blockquote class="blockquote blockquote--bordered blockquote--quoted">
+                    <p class="blockquote__text">
+                        A yawn is a silent scream for coffee.
+                    </p>
+                </blockquote>
+            </article>
+            <article id="promo">
+                <h5 style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(0, 0, 0); font-size: 90px; background-color: #dddddd; padding-left: 20px; width: 460px; margin-top: 40px; border-bottom: solid 15px white;" >PROMOS</h5>
+                <p style="margin-top: -120px;">BUY THREE GET ONE FREE!</p>
+                <img src="cup.png" alt="cup" height="75" class="center" style="margin-top: -30px;">
+                <p>COLLECT STICKERS BY ORDERING FOR OUR NEW MERCH!</p>
+                <img src="sticker.png" alt="sticker" height="75" class="center" style="margin-top: -30px;">
+                <p>PARTICIPATE IN OUR LOTTERY FOR A CHANCE TO WIN OUR BRAND NEW COCOA BEANS!</p>
+                <img src="cocoa.png" alt="cocoa" height="75" class="center" style="margin-top: -30px;">
+            </article>
+            <div id="feature">
+            </div>
+            <aside id="righty">
+                <p style="margin-top: 45px;">F</p>
+                <p>E</p>
+                <p>A</p>
+                <p>T</p>
+                <p>U</p>
+                <p>R</p>
+                <p>E</p>
+                <p>D</p>
+            </aside>
+        </div>
+
+        <div id="maintest">
+            <div id="testimony">
+                <p style="text-align: center; font-size: 30px; font-family: Georgia, 'Times New Roman', Times, serif; background-color: #ffffff; height: 60px; display: block; align-items: center; align-items: center;display: flex;justify-content: center; margin: 0px;" >TESTIMONY</p>
+                <blockquote class="blockquote blockquote--bordered blockquote--quoted">
+                    <p class="blockquote__text">
+                        This place is amazing! They offered the best coffee and showed the best attitude to its costumers. Internet connection is very fast and is unlimited as well. This place is indeed perfect for studying and chilling out. It was very quiet and air-conditioned. I just want to keep coming back to this place. Thank you!
+                    </p>
+                    <p class="blockquote__text blockquote__text--credits">- Marcus Nivette</p>
+                </blockquote>
+                <div id="lefttest">
+                    <video height="180" poster="bean.png" controls style="border-radius: 20px;">
+                        <source src="beans.mp4" type="video/ogg">
+                        <source src="beans.mp4" type="video/mpeg">
+                    </video>
+                </div>
+                <div id="righttest">
+                    <video height="180" poster="purs.png" controls style="border-radius: 20px;">
+                        <source src="pur.mp4" type="video/ogg">
+                        <source src="pur.mp4" type="video/mpeg">
+                    </video>
+                </div>
+                
+            </div>
+            <div id="oper">
+                <div class="container">
+                    <p style="text-align: center; font-weight: bold; font-size: 30px; margin-bottom: 0px;">OPERATING HOURS</p>
+                    <div id="leftcontain" style="text-align: center;">
+                        <p>MON</p>
+                        <p>TUE</p>
+                        <p>WED</p>
+                        <p>THU</p>
+                        <p>FRI</p>
+                        <p>SAT</p>
+                        <p>SUN</p>
+                    </div>
+                    <div id="rightcontain">
+                        <p>9am - 5pm</p>
+                        <p>9am - 5pm</p>
+                        <p>9am - 5pm</p>
+                        <p>9am - 5pm</p>
+                        <p>9am - 5pm</p>
+                        <p>11am - 3pm</p>
+                        <p>-CLOSED-</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="quote">
+            <p class="center" style="font-size:60px;padding-top: 20px; font-family: 'Patrick Hand SC', cursive; margin-bottom: -15px;">QUOTE OF THE DAY</p>
+            <p class="center" style="font-size: 30px;">In a world full of chaos, uncertainty, and nonsense, there are still fresh cups of coffee, new plans to make, and wild dreams to chase.</p>
+        </div>
+        <footer>COPYRIGHT. ALL RIGHTS RESERVED.
+        </footer>
+    </body>
+</html>
